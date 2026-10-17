@@ -4,8 +4,9 @@
 2. Start with: python backend.py
 3. Open http://127.0.0.1:8000/ in a browser. This server also serves the quiz page.
 
-Keep this file private if you put a real API key in it. Do not publish it or
-commit it to a public repository. This server binds to localhost only.
+Store API credentials only in environment variables or an untracked local .env
+file. Never commit credentials to this repository. For Render, use the service
+environment settings; the server binds to the hosting-provided port.
 """
 
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
