@@ -18,4 +18,6 @@ The API endpoint is `POST /api/questions` with JSON body `{"grade":"9"}`, `{"gra
 
 Set `GEMINI_API_KEY` in the process environment (or a private, untracked `.env` file), then run `python backend.py`. The default local address is `http://127.0.0.1:8000`; health check: `/health`.
 
+Run offline validation tests with `python -m unittest`.
+
 Never commit API keys to this repository.
